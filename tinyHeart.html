@@ -1,0 +1,57 @@
+<!DOCTYPE THML>
+<html>
+<head>
+     <meta charset='utf-8'>
+	<title>tinyHeart</title>
+	<style type="text/css">
+	   body {   /** body 用到的是元素选择器**/
+	   	  padding-top:10px;
+	   }
+	   .all_bg {  /** 类选择器 class= 'all_bg' **/
+	   	  width:800px;
+	   	  height:600px;
+	   	  margin:0px auto;
+	   }
+	   #allcanvas { /** id 选择器 #id **/
+	   	 position: relative;
+	   	 width:800;
+	   	 height:600;
+	   	 margin: 0px;
+	   }
+	   
+	   #canvas1{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         z-index: 1;
+	   }
+	   #canvas2{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         z-index: 0; /** z-index 代表层级关系**/
+	   }
+	</style>
+</head>
+<body>
+
+<div class="all_bg">
+	  <div id="allcanvas">
+	    <canvas id="canvas1" width="800" height="600"></canvas><!--鱼的背景-->
+	    <canvas id="canvas2" width="800" height="600"></canvas><!-- 这是海藻的背景 -->
+	 </div> 
+	 <script type="text/javascript" src="js/main.js"></script>
+	 <script type="text/javascript" src="js/background.js"></script>
+	 <script type="text/javascript" src="js/aneObj.js"></script>
+	 <script type="text/javascript" src="js/fruit.js"></script>
+	 <script type="text/javascript" src="js/bigFish.js"></script>
+	 <script type="text/javascript" src="js/collision.js"></script>
+	 <script type="text/javascript" src="js/baby.js"></script>
+	 <script type="text/javascript" src="js/commonFunctions.js"></script>
+	 <script type="text/javascript" src="js/score.js"></script>
+	 <script type="text/javascript" src="js/wave.js"></script>
+	 <script type="text/javascript" src="js/colSmallFish.js"></script>
+	 <script type="text/javascript" src="js/dust.js"></script>
+</div>
+</body>
+</html>
